@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food recipe api</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="heading">
+        <h2 class="title text-center pt-2"><i>Recipes Information</i></h2>
+        <h4 id="description" class="text-center fs-3">
+            <i>Fetch and Display the data from Food Recipe Api by using promise.</i>
+        </h4>
+    </div>
+    <div class="container">
+        <div class="text-center mt-5">
+            <h3><b>Search your Food Recipe</b></h3>
+            <form action="">
+                <div class="d-flex w-50 mx-auto">
+                    <input type="text" class="form-control rounded-pill" placeholder='Search your Food Recipe here'
+                        list="subject">
+                    <datalist id="subject">
+                        <option value="Biriyani"></option>
+                        <option value="Fried rice"></option>
+                        <option value="Sambar"></option>
+                        <option value="Paneer"></option>
+                        <option value="Chicken gravy"></option>
+                        <option value="Parota"></option>
+                        <option value="Fish fry"></option>
+                        <option value="Mushroom"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <input type="submit" class='button btn btn-primary mt-3'>
+                </div>
+            </form>
+        </div>
+        <div id='showRecipe' class='row pt-5'>
+            <script src="script.js"></script>
+</body>
+
+</html>
